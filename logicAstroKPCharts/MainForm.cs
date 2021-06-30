@@ -111,7 +111,9 @@ namespace logicAstroKPCharts
                 strTimeZoneData = _textStreamReader.ReadToEnd();
                 _textStreamReader.Close();
 
-                string[] TSElements = strTimeZoneData.Split('\r');
+                strTimeZoneData = strTimeZoneData.Replace("\r", "\n");
+                strTimeZoneData = strTimeZoneData.Replace("\n\n", "\n");
+                string[] TSElements = strTimeZoneData.Split('\n');
                 foreach (string TSElement in TSElements)
                 {
                     string[] TimeZoneElements = TSElement.Split('|');
