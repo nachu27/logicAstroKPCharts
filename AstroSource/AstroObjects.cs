@@ -1,4 +1,4 @@
-﻿/* logicAstroKPCharts
+/* logicAstroKPCharts
    Astrology Software
    Author: Nachiappan Narayanan
    *********************************************************/
@@ -1307,8 +1307,6 @@ namespace srlWebCom.Astro.AstroObjects
         private bool ExecuteSWECon(string strAddArguements)
         {
             _AstroData = "";
-
-            // swecon.exe -edirD:\Tools\N\SwissEph\Eph -eswe -true -fPZLBRS -b27.06.1975 -ut16:46 -house78.36,10.07,P -sid1 -topo78.36,10.07,0>> result.txt
 
             try
             {
