@@ -1,4 +1,4 @@
-﻿/* logicAstroKPCharts
+/* logicAstroKPCharts
    Astrology Software
    Author: Nachiappan Narayanan
    *********************************************************/
@@ -189,7 +189,7 @@ namespace logicAstroKPCharts
                     return false;
                 }
 
-                m_strSWEConFilePath = string.Format(@"{0}\swiss-eph\swecon.exe", Directory.GetCurrentDirectory());
+                m_strSWEConFilePath = string.Format(@"{0}\swiss-eph\swetest.exe", Directory.GetCurrentDirectory());
                 if (File.Exists(m_strSWEConFilePath) == false)
                 {
                     MessageBox.Show("Unable to find Swiss Ephemeris application at " + m_strSWEConFilePath, "InitApplicationControls() - Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
